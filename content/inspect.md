@@ -6,10 +6,6 @@ Environment | Location
 --- | ---
 Production | `https://data.api.codefi.network/v0/inspect`
 
-<!-- A _score_ contains fields relating to an _asset_ by a _platform_.
-The `scores` resource is computed every `6` hours and is cached at `1` hour.
-The shape of `scores` will grow or shrink depending on the fields that need to be exposed. -->
-
 A _protocol_ contains fields relating to a protocol's configuration, like admin keys, governance, audits and oracles. The data is sources from [this Github repo](https://github.com/ConsenSys/inspect-data/)
 
 We make use of HTTP status codes to communicate the result of the request. These status codes are currently supported:
@@ -34,7 +30,7 @@ Field | Description
 
 ### List All Data
 
-Lists all current scores from the latest calcuation.
+Lists the data of all platforms currently supported by Inspect
 
 ```endpoint
 GET /v0/inspect
