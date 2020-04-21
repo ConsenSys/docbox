@@ -8,17 +8,7 @@ Production | `https://data.api.codefi.network/v0/inspect`
 
 A _protocol_ contains fields relating to a protocol's configuration, like admin keys, governance, audits and oracles. The data is sources from [this Github repo](https://github.com/ConsenSys/inspect-data/)
 
-We make use of HTTP status codes to communicate the result of the request. These status codes are currently supported:
-
-Status Code | Description
---- | ---
-`200` | The response was successful and there scores present.
-`400` | The request was invalid and did not map to our requirements.
-`404` | The resource that was requested was not found.
-`429` | The global rate limiter for the API has been reached, backoff strategy suggested.
-
-We try to keep the responses minimal, only serving the most important bits to keep response sizes small.
-The fields of a _score_ are defined as follows:
+The fields of a _protocol_ are defined as follows:
 
 Field | Description
 --- | ---
