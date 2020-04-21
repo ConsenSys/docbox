@@ -1,12 +1,14 @@
 ## Inspect Data
 
+[Codefi Inspect](https://inspect.codefi.network/) is an open source project dedicated to protocol transparency in DeFi.
+
 The `inspect` resource is available at this location:
 
 Environment | Location
 --- | ---
 Production | `https://data.api.codefi.network/v0/inspect`
 
-A _protocol_ contains fields relating to a protocol's configuration, like admin keys, governance, audits and oracles. The data is sources from [this Github repo](https://github.com/ConsenSys/inspect-data/)
+A _protocol_ contains fields relating to a protocol's configuration such as admin keys, governance, audits and oracles. The data is sourced from [this Github repo](https://github.com/ConsenSys/inspect-data/).
 
 The fields of a _protocol_ are defined as follows:
 
@@ -20,7 +22,7 @@ Field | Description
 
 ### List All Data
 
-Lists the data of all platforms currently supported by Inspect
+Lists the data of all platforms currently supported by Inspect.
 
 ```endpoint
 GET /v0/inspect
